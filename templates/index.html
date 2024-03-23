@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <div>
+      <form method="POST" action="/testingcsv">
+        <select method="POST" name="things">
+          {% if chose %}
+          <option value="{{chose}}" selected>{{chose}}</option>
+          {% endif %} {% for pick in picks %}
+          <option value="{{pick}}">{{pick}}</option>
+          {% endfor %}
+        </select>
+        <input type="submit" class="button" name="submit_run" value="Run" />
+        {%if num==100%}
+        <input
+          type="submit"
+          class="before-button"
+          name="submit_download"
+          value="Download"
+          disabled
+        />
+        {%elif num==200%}
+        <input
+          type="submit"
+          class="button"
+          name="submit_download"
+          value="Download"
+        />
+        {%endif%}
+      </form>
+    </div>
+  </body>
+</html>

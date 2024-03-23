@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+form {
+  padding: 12px;
+}
+div {
+  width: 400px;
+  height: auto;
+  background-color: #a9d6e5;
+  margin: 12% auto;
+  border-radius: 10px;
+}
+select {
+  font-size: 18px;
+  margin-top: 20%;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #19747e;
+  outline: none;
+}
+.button {
+  background-color: #19747e;
+  display: block;
+  border: 2px solid #19747e;
+  margin: 20px auto;
+  padding: 10px 25px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 200ms ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #19747e;
+}
