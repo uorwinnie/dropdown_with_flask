@@ -37,3 +37,14 @@ select {
   background-color: #ffffff;
   color: #19747e;
 }
+.before-run {
+  background-color: #19747e;
+  display: block;
+  border: 2px solid #19747e;
+  margin: 20px auto;
+  padding: 10px 25px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 200ms ease-in-out;
+}
